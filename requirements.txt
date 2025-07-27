@@ -1,0 +1,4 @@
+Flask
+howlongtobeatpy
+Flask-CORS
+gunicorn
