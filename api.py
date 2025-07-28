@@ -3,7 +3,7 @@ from howlongtobeatpy import HowLongToBeat
 from flask_cors import CORS
 
 app = Flask(__name__)
-CORS(app) # A forma simples e correta com Flask-CORS
+CORS(app, resources={r"/howlongtobeat/*": {"origins": "https://biblioteca-de-jogos-psi.vercel.app"}})
 
 @app.route('/howlongtobeat/<string:game_name>')
 def get_game_data(game_name):
